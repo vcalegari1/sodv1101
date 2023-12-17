@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vinicius - Personal Website</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vinicius Calegari</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="hobbies.html">Hobbies/Interests</a></li>
+                <li><a href="html_cheatsheet.html">HTML Cheat Sheet</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="main-content">
+        <a href="#">
+            <img src="myself.jpg" class="profile-image" alt="My Profile Image">
+        </a>                      
+        <h2>About me</h2>
+        <p>👋 Hi! I'm a 29-year-old tech professional with 6 years of experience in Analysis and Systems Development. Originally from Brazil, I recently moved to Canada. 
+            👨‍💻 My journey in tech is a continuous adventure of learning and growth. 👬 Blessed with two brothers, one a twin, family grounds me as I explore new horizons. 
+            🐾 Dogs hold my heart; their loyalty and joy bring constant smiles. 🎸 Rock music speaks to my soul, and I find solace in PC gaming, exploring worlds and achieving 
+            victories. 🍻 I enjoy simple pleasures—drinks, delicious food, and cozy spots to unwind with friends. Let's connect and share stories! 🌟</p>
+
+            <h2>Contact Me</h2>
+            <form id="contactForm" onsubmit="return sendEmail()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error"></span>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <span id="messageError" class="error"></span>
+    
+                <input type="submit" value="Submit">
+            </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vinicius Calegari. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
